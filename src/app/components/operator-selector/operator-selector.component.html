@@ -1,0 +1,7 @@
+<div class="btn-group" role="group" aria-label="Operators">
+  <button type="button" *ngFor="let operator of operators; let i = index" 
+    (click)="onOperatorSelected(i)"
+    class="btn {{operator.id === currentOperator.id ? 'btn-primary' : 'btn-outline-secondary'}}">
+      {{operator.name}}
+  </button>
+</div>
